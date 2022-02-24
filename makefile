@@ -8,3 +8,8 @@ run:
 
 clean:
 	rm bin
+	
+doall: bin run clean
+	make clean
+	make bin
+	make run
