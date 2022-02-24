@@ -7,7 +7,7 @@ int main() {
 
 	if (pid > 0) {
 		printf("pai.\n");
-		sleep(25);
+		sleep(10);
 		execlp("ps", "ps","-l",(char *)NULL);
          }
          
