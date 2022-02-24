@@ -1,12 +1,10 @@
 # -*- MakeFile -*-
 
-all: zombie clean compiler
+bin zombie.c
+	gcc $< -o $@
 
-zombie: zombie.c
-	gcc zombie.c -o zombie
+run:
+	./bin
 
 clean:
-	clear
-
-compiler: zombie
-	./zombie
+	rm bin
