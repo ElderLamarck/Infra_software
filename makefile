@@ -1,6 +1,6 @@
 # -*- MakeFile -*-
 
-bin zombie.c
+bin: zombie.c
 	gcc $< -o $@
 
 run:
